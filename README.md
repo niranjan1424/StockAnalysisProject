@@ -23,22 +23,6 @@ Edit
 
 ---
 
-## ✅ Final Step: Share with Your Mentor
-
-Once pushed, go to your repo page and copy the URL like:
-
-https://github.com/niranjan-a/StockAnalysisProject
-
-yaml
-Copy
-Edit
-
-Send this link to your intern lead ✅
-
----
-
-Would you like me to generate a ready-to-use `README.md` file and upload instructions as a `.txt` for you?
-
 
 
 
