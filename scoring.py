@@ -1,20 +1,20 @@
 def generate_score(row):
-    score = 0
+    score = 0.0
 
-    # Rule 1: MA20 crosses above MA50 (bullish)
+    # Weighted MA crossover (more reliable)
     if row['MA20'] > row['MA50']:
-        score += 1
+        score += 2.0
 
-    # Rule 2: RSI below 30 (oversold = potential buy)
+    # RSI < 30 (oversold)
     if row['RSI'] < 30:
-        score += 1
+        score += 1.5
 
-    # Rule 3: Price near lower Bollinger Band (undervalued)
+    # Price below Bollinger Band lower
     if row['Close'] < row['BB_lower']:
-        score += 1
+        score += 1.5
 
-    # Rule 4: Volume Spike (unusual activity)
+    # Volume Spike
     if row['Volume_Spike']:
-        score += 1
+        score += 1.0
 
     return score
