@@ -91,10 +91,11 @@ print("\n📈 Top Recent Buy Signals (Score >= 3):")
 print(top_signals[['Close', 'MA20', 'MA50', 'RSI', 'Score']].tail())
 
 # ---------- BACKTESTING ------------
+# Run enhanced backtest
 backtest_results = backtest_strategy(data)
 
-print("\n🔁 Backtest Results (Buy on Score ≥ 3, hold for 10 days):")
-for res in backtest_results[-5:]:  # last 5 signals
+print("\n🔁 Enhanced Backtest Results (Weighted Score ≥ 4.5, SL 5%, TP 10%):")
+for res in backtest_results[-5:]:
     print(res)
 
 from news_helper import get_latest_headlines
