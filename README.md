@@ -11,7 +11,7 @@ This Python project analyzes stock market data for short-term investment signals
 ## How to Run
 
 ```bash
-git clone https://github.com/niranjan1424/StockAnalysisProject.git
+git clone https://github.com/USER_NAME/StockAnalysisProject.git
 cd StockAnalysisProject
 python -m venv venv
 .\venv\Scripts\activate
